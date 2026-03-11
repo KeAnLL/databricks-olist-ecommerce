@@ -2,6 +2,9 @@ name: 'OList E-Commerce Dev Pipelines Deployments'
 concurrency: "1"
 
 on:
+  push:
+    branches:
+      - master
   pull_request:
     types:
       - opened
