@@ -51,7 +51,7 @@ jobs:
 
       # Run the Databricks workflow named "sample_job" as defined in the
       # bundle that was just deployed.
-      - run: databricks bundle run sample_job --refresh-all
+      - run: databricks bundle run olist_ecommerce_data_etl --refresh-all
         working-directory: .
         env:
           DATABRICKS_TOKEN: ${{ secrets.SP_TOKEN }}
