@@ -1,5 +1,5 @@
 name: 'OList E-Commerce Dev Pipelines Deployments'
-concurrency: 1
+concurrency: "1"
 
 on:
   pull_request:
@@ -8,7 +8,7 @@ on:
       - synchronize
     branches:
       - master
-      
+
 jobs:
   # Used by the "pipeline_update" job to deploy the bundle.
   # Bundle validation is automatically performed as part of this deployment.
